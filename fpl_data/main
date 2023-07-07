@@ -1,0 +1,14 @@
+import requests
+
+from fpl_data.fpl_initial_info import FPL_Initial_Info
+
+
+fpl_obj = FPL_Initial_Info()
+# fpl_team_data = fpl_obj.get_team_info()
+# fpl_obj.write_json_file('team_ids', fpl_team_data, '.json')
+#
+# fpl_player_data = fpl_obj.get_player_info()
+# fpl_obj.write_json_file('player_summaries', fpl_player_data, '.json')
+
+fpl_obj.get_player_info_per_gw()
+
